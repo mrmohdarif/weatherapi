@@ -11,6 +11,7 @@ export const fetchWeatherByCity = async (city) => {
     params: {
       q: city,
       appid: API_KEY,
+      units: "metric"
     },
   });
   return response.data;
